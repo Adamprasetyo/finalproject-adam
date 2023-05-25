@@ -1,0 +1,347 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DIRIKU</title>
+        <link rel="shortcut icon" href="images.jpg" type="image/x-icon">
+
+        <style>
+          nav {
+            background-color: rgba(29, 241, 191, 0.908);
+            border-style: solid;
+            border-color: #000000;
+            border-radius: 50px;
+        }
+  
+          nav ul {
+            display: inline-flex;
+            justify-content: flex-end;
+          }
+  
+          nav ul li {
+            list-style-type: circle;
+            margin: 20px 12px;
+          }
+  
+          nav ul li a {
+            text-decoration: double;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: #000000;
+            text-transform: uppercase;
+            text-shadow: 30em;
+            padding: 60px;
+          }
+  
+          nav ul li a:hover {
+            text-decoration-line: underline;
+            text-decoration-color: rgb(255, 255, 255);
+            
+          
+        }
+  
+          body {
+            margin: 20px;
+          }
+  
+          .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+          }
+  
+          #header {
+            background: #002895;
+            width: 100%;
+          }
+  
+          #footer {
+             background: #ff3737;
+             width: 100%;
+             position: relative;
+             bottom: 0;
+          }
+  
+          #menu1, #menu2, #menu3, #menu4, #menu5 {
+            min-height: 80vh;
+          }
+  
+          #menu1 {
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 20px;
+            font-family: monospace;            
+          }
+
+          #nama  {
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 20%;
+            margin-top: 5%;
+            color: #09ff00;
+        
+          }
+  
+          h1 {
+            margin-left: 35% ;
+            padding: 0.5em;
+            color: #f2ff00;
+          }
+
+          #description-1 {
+            margin-left: 20%;
+            margin-top: 10%;
+            width: 50%;
+            color: rgb(255, 255, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+          }
+          
+          #menu2 {
+            background-image: url("bg4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+          }
+
+          h2 {
+            margin-left: 40% ;
+            padding: 0.5em;
+            font-size: 40px;
+            color: #00ffe5;
+          }
+
+          #nama-a {
+            color: #09ff00;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+          }
+
+          #description-a {
+            margin-left: 40px;
+            color: rgb(254, 254, 254);
+            font-style: italic;
+            font-size: 20px;
+          }
+
+          #nama-b {
+            color: #09ff00;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+          }
+          #description-b {
+            margin-left: 40px;
+            color: #ffffff;
+            font-style: italic;
+            font-size: 20px;
+          }
+
+        
+          #menu3 {
+            background-image: url("bg6.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+                             
+          }
+
+          h3 {
+            margin-left: 45% ;
+            padding: 0.5em;
+            font-size: 40px;
+            color: #e5ff00;
+
+          }
+
+          #description-3 {
+            font-size: 40px;
+            color: #ffffff;
+            margin-left: 30%;
+
+          }
+
+          
+          #menu4 {
+            background-image: url("bg5.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          h4 {
+            margin-left: 37% ;
+            padding: 0.5em;
+            font-size: 40px;
+            color: #2bc1c1;
+          }
+
+          #nama-c {
+            color: #0003be;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+          }
+          #description-4 {
+            margin-left: 40px;
+            color: rgb(0, 0, 0);
+            font-style: italic;
+            font-size: 20px;
+          }
+
+          #nama-d {
+            color: #0003be;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+          }
+
+          #description-5 {
+            margin-left: 40px;
+            color: rgb(0, 0, 0);
+            font-style: italic;
+            font-size: 20px;
+          }
+          #menu5 {
+            background-image: url("bg7.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          
+          h5 {
+            margin-left: 45% ;
+            padding: 0.5em;
+            font-size: 40px;
+            color: #ffeb0a;
+          }
+
+          #nama-e {
+            color: #05d7d7;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 25px;
+          }
+          #profil-picture {
+            margin-left: 5%;
+            float: left
+
+          }
+
+          
+        </style>
+    </head> 
+    <body>
+        <div class="wrapper">
+          <div id="header">
+            <nav>
+              <ul>
+                <li><a href="#menu1">About</a></li>
+                <li><a href="#menu2">Experience</a></li>
+                <li><a href="#menu3">Skills</a></li>
+                <li><a href="#menu4">Interest</a></li>
+                <li><a href="#menu5">Award</a></li>
+              </ul>
+            </nav>
+          </div>
+    
+          <div id="content">
+            <div id="menu1">
+                <h1>Personal summary</h1>
+                <div id="nama">ADAM PRASETYO ADJI</div>
+                <div id="profil-picture">
+                    <img src="profil2.jpeg" alt="Gambar Profil" width="150px">
+                </div>
+                <div id="description-1">
+                    <p>Nama lengkap saya Adam Prasetyo Adji. Lahir di Jakarta pada tanggal 07 September Tahun 2001, dan nama panggilan saya Adam. Saya adalah seseorang yang enerjik dan passionate dalam bidang yang saya tekuni.</p>
+                </div>
+    
+            </div>
+    
+            <div id="menu2">
+                <h2>Experiences</h2>
+                <br>
+                <br>
+                
+              <div id="nama-a">
+                <ul>
+                  <li>CV. ADI BODYWORKS</li>
+                </ul>
+              </div>
+              <div id="description-a">
+                <p>Bengkel otomotif yang bergerak di bidang repair dan painting</p>
+                <p>Periode: 2019-2022</p>
+              </div>
+                <br>
+                <br>
+              <div id="nama-b">
+                <ul>
+                  <li>TRANSMART</li>
+                </ul>
+              </div>
+              <div id="description-b">
+                <p>perusahaan hipermarket dan pusat perbelanjaan </p>
+                <p>Periode : 2022</p>
+              </div>
+                
+            </div>
+    
+            <div id="menu3">
+                <h3>Skills</h3>
+              <br>
+              <br>
+              <div id="description-3">
+                <ol>
+                  <li>Berdiskusi</li>
+                  <li>Bersosial Media</li>
+                  <li>Kemampuan Analisis</li>
+                </ol>
+              </div>
+            </div>
+    
+            <div id="menu4">
+                <h4>Personal Interest</h4>
+              <br>
+              <br>
+              <div id="nama-c">
+                <ul>
+                  <li>Traveling</li>
+                </ul>
+              </div>
+              <div id="description-4">
+                <p>Dalam waktu senggang, saya suka menjelajah tempat yang menarik umtuk dikunjungi</p>
+              </div>
+              <div id="nama-d">
+                <ul>
+                  <li>Komunikasi Publik</li>
+                </ul>
+              </div>
+              <div id="description-5">
+                <p>berkomunikasi adalah cara saya untuk menambah wawasan</p>
+              </div>
+            </div>
+
+            <div id="menu5">               
+                <h5>Award</h5>
+              <br>
+              <br>
+              <div id="nama-e">
+                <ul>
+                  <li>Pemenang kompetisi debat bahasa Inggris , Desember 2018</li>
+                <br>
+                <br>
+                  <li>Praktik terbaik dalam Kompetisi siswa Bahasa Inggris, September 2018</li>
+                </ul>
+                  
+              </div>
+            </div>
+
+          </div>
+    
+          <div id="footer">
+            SOSIAL MEDIA <br/>
+            <a href="https://www.instagram.com/adamprss/">Instagram</a>
+            |
+            <a href="https://www.linkedin.com/in/adampras/>linkedin">linkedin</a>
+            |
+            phone: 081283553549</p>
+          </div>
+        </div>
+      </body>
+    </html>
+    
